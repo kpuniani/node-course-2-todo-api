@@ -7,22 +7,22 @@ return console.log("Unable to conect to database server");
 }
 
 /*db.collection('ToDos').insertOne({
-text:'Walk the dog',
-completed:true
+text:'To eat',
+completed:false
 
 },(err,result)=>{
   if(err){
 return console.log("Unable to insert todo", err);
 }
 console.log(JSON.stringify(result.ops,undefined,2));
-})
+})*/
 console.log("Connected to mongodb server");
 
-*/
+
 db.collection('Users').insertOne({
- name:'Andrew',
+ name:'Mike',
  age:24,
- location:'CA'
+ location:'Philadelphia'
 },(err,result)=>{
 if(err){
   return console.log("Unable to insert Users", err);

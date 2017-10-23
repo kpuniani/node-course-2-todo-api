@@ -19,7 +19,7 @@ console.log(`count is:'${count}`)},
 (err)=>{
  console.log("Not able to find",err);
 });*/
-db.collection('Users').find({name:'Andrew'}).toArray.then((docs)=>{
+db.collection('Users').find().toArray().then((docs)=>{
 console.log(JSON.stringify(docs,undefined,2))},
 (err)=>{
  console.log("Not able to find",err);
