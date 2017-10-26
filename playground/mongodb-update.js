@@ -28,8 +28,8 @@ _id : new ObjectID('59ee64b3662685186882006b')
   $set:{
 name :"John"
   },
-  $inc:{
-
+  $inc:
+  {
     age :+1,
   }
 },
